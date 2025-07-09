@@ -41,4 +41,21 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
+    // store login user id as  created_by in table
+    public function createdBy()
+    {
+        return $this->belongsTo(User::class,'created_by','id');
+    }
+
+    public function gurdian()
+    {
+        return $this->belongsTo(User::class,'created_by','id');
+    }
+
+    
+    public function location_data()
+    {
+        return $this->belongsTo(Locations::class,'location_id','id');
+    }
 }

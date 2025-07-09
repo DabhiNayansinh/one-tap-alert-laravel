@@ -22,4 +22,6 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 // Route::middleware('api')->group(function () {
     Route::resource('items', ItemController::class);
     Route::get('items/search/{query}', [ItemController::class, 'search']);
+    Route::get('location', [ItemController::class, 'location']);
+
 // });

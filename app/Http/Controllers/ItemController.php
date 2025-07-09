@@ -18,6 +18,10 @@ class ItemController extends Controller
 
     }
 
+    public function location()  {
+        return view('Locations/ClientLocation');
+    }
+
     /**
      * Show the form for creating a new resource.
      *
