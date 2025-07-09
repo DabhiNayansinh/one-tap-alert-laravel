@@ -1,5 +1,7 @@
 CREATE TABLE IF NOT EXISTS `register` (
   `id` int NOT NULL AUTO_INCREMENT,
+  `user_fname` varchar(255) NULL,
+  `user_lname` varchar(255) NULL,
   `userfullname` varchar(200) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
   `email` varchar(50) NOT NULL,
   `password` varchar(20) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
